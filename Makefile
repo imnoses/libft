@@ -6,7 +6,7 @@
 #    By: spuschma <spuschma@student.42vienna.com>  #+#  +:+       +#+          #
 #                                                +#+#+#+#+#+   +#+             #
 #    Created: 2026/09/13 15:42:53 by spuschma         #+#    #+#               #
-#    Updated: 2026/09/13 16:24:13 by spuschma        ###   ########.fr         #
+#    Updated: 2026/09/13 19:13:41 by spuschma        ###   ########.fr         #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,9 +19,6 @@ DEBUG		?= 0
 RM		= rm -f
 AR		= ar
 ARFLAGS		= rcs
-
-JOBS		?= $(shell nproc 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo 4)
-MAKEFLAGS	+= -j $(JOBS)
 
 ifeq ($(DEBUG),1)
 CFLAGS		+= -g3
@@ -39,7 +36,9 @@ SRCS		= ft_bzero.c \
 		  ft_memmove.c \
 		  ft_strlcat.c \
 		  ft_strlcpy.c \
-		  ft_strlen.c
+		  ft_strlen.c \
+		  ft_toupper.c \
+		  ft_tolower.c
 
 OBJS		= $(SRCS:%.c=$(OBJ_DIR)/%.o)
 DEPS		= $(OBJS:.o=.d)
@@ -67,4 +66,3 @@ re:
 -include $(DEPS)
 
 .PHONY: all clean fclean re
-.DEFAULT_GOAL := all
