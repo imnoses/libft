@@ -6,7 +6,7 @@
 /*   By: spuschma <spuschma@student.42vienna.com>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/09/13 12:59:01 by spuschma         #+#    #+#              */
-/*   Updated: 2026/09/13 13:16:20 by spuschma        ###   ########.fr        */
+/*   Updated: 2026/09/13 13:42:51 by spuschma        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,4 +33,18 @@ void	ft_bzero(void *s, size_t n)
 	{
 		c[i] = 0;
 	}
+}
+
+void	*ft_memcpy(void *dest, const void *src, size_t n)
+{
+	const unsigned char	*s;
+	unsigned char		*d;
+	size_t				i;
+
+	s = src;
+	d = dest;
+	i = -1;
+	while (++i < n)
+		d[i] = s[i];
+	return (dest);
 }
