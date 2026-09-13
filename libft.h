@@ -6,7 +6,7 @@
 /*   By: spuschma <spuschma@student.42vienna.com>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/09/13 15:37:09 by spuschma         #+#    #+#              */
-/*   Updated: 2026/09/13 22:03:34 by spuschma        ###   ########.fr        */
+/*   Updated: 2026/09/13 22:10:54 by spuschma        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,8 @@ char	*strnstr(const char *big, const char *little, size_t len);
 int		ft_atoi(const char *nptr);
 
 void	*ft_calloc(size_t n, size_t size);
+
+char	*ft_strdup(const char *s);
 
 int		ft_isalpha(int c);
 
