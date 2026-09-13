@@ -6,7 +6,7 @@
 /*   By: spuschma <spuschma@student.42vienna.com>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/09/13 12:59:01 by spuschma         #+#    #+#              */
-/*   Updated: 2026/09/13 14:06:39 by spuschma        ###   ########.fr        */
+/*   Updated: 2026/09/13 14:12:52 by spuschma        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		return (NULL);
 	if (dest < src)
 		return (ft_memcpy(dest, src, n));
-	// reverse copy cus might overlap with dest > src
 	s = src;
 	d = dest;
 	while (n--)
