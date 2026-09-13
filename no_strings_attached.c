@@ -25,3 +25,13 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		dst[i++] = 0;
 	return (ft_strlen(src));
 }
+
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
+{
+	size_t	dst_size;
+
+	dst_size = -1;
+	while (++dst_size < size && dst[dst_size])
+		;
+	return (dst_size + ft_strlcpy(dst + dst_size, src, size - dst_size));
+}
