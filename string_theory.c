@@ -50,3 +50,20 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 		d[i] = s[i];
 	return (dest);
 }
+
+void	*ft_memmove(void *dest, const void *src, size_t n)
+{
+	const unsigned char	*s;
+	unsigned char		*d;
+
+	if (!src || !dest)
+		return (NULL);
+	if (dest < src)
+		return (ft_memcpy(dest, src, n));
+	// reverse copy cus might overlap with dest > src
+	s = src;
+	d = dest;
+	while (n--)
+		d[n] = s[n];
+	return (dest);
+}
