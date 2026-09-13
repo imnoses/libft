@@ -6,7 +6,7 @@
 /*   By: spuschma <spuschma@student.42vienna.com>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/09/13 15:37:09 by spuschma         #+#    #+#              */
-/*   Updated: 2026/09/13 19:17:31 by spuschma        ###   ########.fr        */
+/*   Updated: 2026/09/13 19:45:49 by spuschma        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,10 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size);
 int		ft_tolower(int c);
 
 int		ft_toupper(int c);
+
+char	*ft_strchr(const char *s, int c);
+
+char	*ft_strrchr(const char *s, int c);
 
 int		ft_isalpha(int c);
 
