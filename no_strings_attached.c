@@ -6,7 +6,7 @@
 /*   By: spuschma <spuschma@student.42vienna.com>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/09/13 14:24:33 by spuschma         #+#    #+#              */
-/*   Updated: 2026/09/13 14:30:21 by spuschma        ###   ########.fr        */
+/*   Updated: 2026/09/13 15:04:28 by spuschma        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	size_t	i;
 
 	i = -1;
-	while (++i < size - 1 && src[i])
+	while (++i + 1 < size && src[i])
 		dst[i] = src[i];
-	while (++i < size)
-		dst[i] = 0;
+	while (i < size)
+		dst[i++] = 0;
 	return (ft_strlen(src));
 }
