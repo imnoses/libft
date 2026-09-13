@@ -44,6 +44,7 @@ SRCS		= ft_bzero.c \
 		  ft_strncmp.c \
 		  ft_memchr.c \
 		  ft_memcmp.c \
+		  ft_strnstr.c
 
 OBJS		= $(SRCS:%.c=$(OBJ_DIR)/%.o)
 DEPS		= $(OBJS:.o=.d)
