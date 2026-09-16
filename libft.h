@@ -6,7 +6,7 @@
 /*   By: spuschma <spuschma@student.42vienna.com>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/09/13 15:37:09 by spuschma         #+#    #+#              */
-/*   Updated: 2026/09/16 20:34:42 by spuschma        ###   ########.fr        */
+/*   Updated: 2026/09/16 20:42:37 by spuschma        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 void	ft_putchar_fd(char c, int fd);
 
 void	ft_putstr_fd(char *s, int fd);
+
+void	ft_putendl_fd(char *s, int fd);
 
 int		ft_isalpha(int c);
 
