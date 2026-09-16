@@ -6,13 +6,13 @@
 /*   By: spuschma <spuschma@student.42vienna.com>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/09/13 21:11:38 by spuschma         #+#    #+#              */
-/*   Updated: 2026/09/13 21:20:40 by spuschma        ###   ########.fr        */
+/*   Updated: 2026/09/16 21:07:05 by spuschma        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strnstr(const char *big, const char *little, size_t len)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;
 	size_t	l_size;
