@@ -6,7 +6,7 @@
 #    By: spuschma <spuschma@student.42vienna.com>  #+#  +:+       +#+          #
 #                                                +#+#+#+#+#+   +#+             #
 #    Created: 2026/09/13 15:42:53 by spuschma         #+#    #+#               #
-#    Updated: 2026/09/13 22:11:09 by spuschma        ###   ########.fr         #
+#    Updated: 2026/09/16 10:02:28 by spuschma        ###   ########.fr         #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,7 +47,8 @@ SRCS		= ft_bzero.c \
 		  ft_strnstr.c \
 		  ft_atoi.c \
 		  ft_calloc.c \
-		  ft_strdup.c
+		  ft_strdup.c \
+		  ft_substr.c
 
 OBJS		= $(SRCS:%.c=$(OBJ_DIR)/%.o)
 DEPS		= $(OBJS:.o=.d)
