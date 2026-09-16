@@ -6,7 +6,7 @@
 /*   By: spuschma <spuschma@student.42vienna.com>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/09/13 15:37:09 by spuschma         #+#    #+#              */
-/*   Updated: 2026/09/16 10:35:14 by spuschma        ###   ########.fr        */
+/*   Updated: 2026/09/16 11:11:14 by spuschma        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 
 char	*ft_strtrim(char const *s1, char const *set);
+
+char	**ft_split(char const *s, char c);
 
 int		ft_isalpha(int c);
 
