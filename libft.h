@@ -77,6 +77,8 @@ void	ft_putstr_fd(char *s, int fd);
 
 void	ft_putendl_fd(char *s, int fd);
 
+void	ft_putnbr_fd(int n, int fd);
+
 int		ft_isalpha(int c);
 
 #endif
