@@ -6,7 +6,7 @@
 /*   By: spuschma <spuschma@student.42vienna.com>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/09/13 15:37:09 by spuschma         #+#    #+#              */
-/*   Updated: 2026/09/17 13:13:19 by spuschma        ###   ########.fr        */
+/*   Updated: 2026/09/17 13:27:54 by spuschma        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,6 +97,8 @@ unsigned int		ft_lstsize(t_list *lst);
 t_list				*ft_lstlast(t_list *lst);
 
 void				ft_lstadd_back(t_list **lst, t_list *new);
+
+void				ft_lstdelone(t_list *lst, void (*del)(void *));
 
 int					ft_isalpha(int c);
 
