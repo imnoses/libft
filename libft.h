@@ -6,7 +6,7 @@
 /*   By: spuschma <spuschma@student.42vienna.com>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/09/13 15:37:09 by spuschma         #+#    #+#              */
-/*   Updated: 2026/09/17 12:59:46 by spuschma        ###   ########.fr        */
+/*   Updated: 2026/09/17 13:03:55 by spuschma        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,6 +91,8 @@ void				*ft_memset(void *s, int c, size_t n);
 t_list				*ft_lstnew(void *content);
 
 void				ft_lstadd_front(t_list **lst, t_list *new);
+
+unsigned int		ft_lstsize(t_list *lst);
 
 int					ft_isalpha(int c);
 
