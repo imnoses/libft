@@ -36,6 +36,7 @@ SRCS		= $(SRC_DIR)/ft_atoi.c \
 			  $(SRC_DIR)/ft_isdigit.c \
 			  $(SRC_DIR)/ft_isprint.c \
 			  $(SRC_DIR)/ft_itoa.c \
+			  $(SRC_DIR)/ft_lstadd_back.c \
 			  $(SRC_DIR)/ft_lstadd_front.c \
 			  $(SRC_DIR)/ft_lstlast.c \
 			  $(SRC_DIR)/ft_lstnew.c \
