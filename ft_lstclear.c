@@ -6,7 +6,7 @@
 /*   By: spuschma <spuschma@student.42vienna.com>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/09/17 13:29:05 by spuschma         #+#    #+#              */
-/*   Updated: 2026/09/17 13:42:02 by spuschma        ###   ########.fr        */
+/*   Updated: 2026/09/18 09:56:53 by spuschma        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ static void	recursive_clear(t_list *lst, void (*del)(void *))
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	if (lst)
+	{
 		recursive_clear(*lst, del);
-	*lst = NULL;
+		*lst = NULL;
+	}
 }
