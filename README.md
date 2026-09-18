@@ -78,3 +78,4 @@ cc main.c -I path/to/libft -L path/to/libft -lft
 ### AI Usage
 All the code in this project is hand coded. **At no time did LLMs touch the code of this project!**
 LLMs were occasionally used to speed up looking for information and for repetitive work like creating the list in this file.
+At the final stage of the project a LLM was used to scan the codebase for bugs my tests didn't catch, but was instructed to just point them out, not fix them.
