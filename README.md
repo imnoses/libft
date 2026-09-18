@@ -65,6 +65,21 @@ Functions that are not part of libc, or differ from their libc counterparts. Fun
 | `ft_putendl_fd` | Writes a string followed by a newline to a file descriptor |
 | `ft_putnbr_fd` | Writes an integer to a file descriptor |
 
+#### Part 3 - Linked lists
+Functions to build and manipulate singly linked lists. A list is made of `t_list` nodes, each holding a `void *content` and a `next` pointer to the following node, or `NULL` for the last one. Since the content is a `void *`, the list itself cannot know how to free it, so the functions that delete nodes take a `del` function that is applied to the content.
+
+| Function | Description |
+|---|---|
+| `ft_lstnew` | Returns a new node holding `content`, with `next` set to `NULL` |
+| `ft_lstadd_front` | Adds a node at the beginning of a list |
+| `ft_lstsize` | Counts the nodes in a list |
+| `ft_lstlast` | Returns the last node of a list |
+| `ft_lstadd_back` | Adds a node at the end of a list |
+| `ft_lstdelone` | Frees a single node and its content using `del`, leaving `next` untouched |
+| `ft_lstclear` | Frees a node and all the nodes after it using `del`, then sets the list to `NULL` |
+| `ft_lstiter` | Applies `f` to the content of every node of a list |
+| `ft_lstmap` | Returns a new list made by applying `f` to the content of every node |
+
 ## Instructions
 Building this library can be done using `make`. `make clean` removes old object files, `make fclean` removes object files and the library and `make re` cleans and then builds the library again.
 To use the library `#include "libft.h` and compile with
