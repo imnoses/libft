@@ -42,6 +42,7 @@ SRCS		= $(SRC_DIR)/ft_atoi.c \
 			  $(SRC_DIR)/ft_lstdelone.c \
 			  $(SRC_DIR)/ft_lstiter.c \
 			  $(SRC_DIR)/ft_lstlast.c \
+			  $(SRC_DIR)/ft_lstmap.c \
 			  $(SRC_DIR)/ft_lstnew.c \
 			  $(SRC_DIR)/ft_lstsize.c \
 			  $(SRC_DIR)/ft_memchr.c \
